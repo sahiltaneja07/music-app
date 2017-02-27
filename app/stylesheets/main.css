@@ -1,0 +1,56 @@
+.main-body{
+	background-color: #cecece;
+	padding: 0px;
+	margin: 0px;
+}
+.music-search-main-class{
+	padding: 10px 20px;
+}
+.query-input input{
+	width: 100%;
+    height: 36px;
+    text-indent: 10px;
+    box-shadow: 1px 4px 8px 0px #bbb;
+    border: none;
+}
+.music-result{
+	background-color: #ffffff;
+	padding: 5px 12px;
+}
+.item{
+	cursor: pointer;
+	padding: 3px 7px;
+    border-bottom: 1px solid #c0c0c0;
+}
+.float-left{
+	float: left;
+}
+.clear-both{
+	clear: both;
+}
+.img-div{
+	margin-right: 10px;
+}
+.img-div img{
+    width: 64px;
+    height: 54px;
+}
+.tag-name{
+	font-size: 18px;
+	font-weight: 700;
+	margin: 5px 0px;
+}
+.item-container{
+	height: 256px;
+    overflow: auto;
+}
+.view-more-btn{
+	margin-top: 5px;
+	width: 100%;
+}
+.artistHeader{
+	background-color: #ffffff;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}

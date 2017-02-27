@@ -1,0 +1,41 @@
+<div class="music-search-main-class">
+	<div class="query-input">
+		<input type="text" placeholder="search by artist or album" ng-change="musicSearch.searchMusic(0, 20)" ng-model="musicSearch.query" />
+	</div>
+
+	<div class="music-result" ng-show="musicSearch.query.length>2">
+		<div class="artist">
+			<div class="tag-name">Artists</div>
+			<div class="item-container">
+				<div class="item" ng-click="musicSearch.goToArtistDetail(artist)" ng-repeat="artist in musicSearch.artistList">
+					<div class="float-left img-div">
+						<img ng-src="{{artist.images[2].url}}">
+					</div>
+					<div class="float-left">
+						<div>{{artist.name}}</div>
+						<div>Followers: {{artist.followers.total}}</div>
+					</div>
+					<div class="clear-both"></div>
+				</div>
+			</div>
+		</div>
+		<div class="album">
+			<div class="tag-name">Albums</div>
+			<div class="item-container">
+				<div class="item" ng-repeat="album in musicSearch.albumList">
+					<div class="float-left img-div">
+						<img ng-src="{{album.images[2].url}}">
+					</div>
+					<div class="float-left">
+						<div>{{album.name}}</div>
+						<div>{{album.album_type}}</div>
+					</div>
+					<div class="clear-both"></div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<button ng-hide="musicSearch.hideViewMoreBtn" class="view-more-btn" type="button" ng-click="musicSearch.viewMoreMusic()">View More</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="musicApp">
+
+<head>
+    <title>Music App</title>
+    <link rel="stylesheet" href="app/stylesheets/main.css" />
+</head>
+
+<body class="main-body">
+
+    <ui-view></ui-view>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/ngstorage/ngStorage.min.js"></script>
+    <script src="app.js"></script>
+    <script src="app/services/services.module.js"></script>
+    <script src="app/services/utility.service.js"></script>
+    <script src="app/services/music-search.service.js"></script>
+    <script src="app/music-search/music-search.module.js"></script>
+    <script src="app/music-search/music-search.config.js"></script>
+    <script src="app/music-search/music-search.component.js"></script>
+    <script src="app/artist/artist.module.js"></script>
+    <script src="app/artist/artist.config.js"></script>
+    <script src="app/artist/artist.component.js"></script>
+
+
+</body>
+</html>

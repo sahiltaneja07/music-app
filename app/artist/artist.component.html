@@ -1,0 +1,24 @@
+<div class="music-search-main-class">
+	<div class="artistHeader">
+		<b>{{artist.artistName}}'s Albums</b>
+	</div>
+	<div class="music-result">
+		<div class="album">
+			<div>
+				<div class="item" ng-repeat="album in artist.albumList">
+					<div class="float-left img-div">
+						<img ng-src="{{album.images[2].url}}">
+					</div>
+					<div class="float-left">
+						<div>{{album.name}}</div>
+						<div>{{album.album_type}}</div>
+					</div>
+					<div class="clear-both"></div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<button ng-hide="artist.hideViewMoreBtn" class="view-more-btn" type="button" ng-click="artist.viewMoreAlbums()">View More</button>
+		</div>
+	</div>
+</div>
